@@ -18,4 +18,12 @@ class MyExamplesController < ApplicationController
     # show numbers to the user
     render json: {numbers: winning_numbers}
   end
+
+  def counter
+    count = 0
+
+    count += 1
+    # database, store and retrieve data
+    render json: {message: "hello", page_count: count}
+  end
 end

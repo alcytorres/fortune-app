@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # web request             controller  method 'action'
   get "/random-fortune" => "my_examples#fortune"
   get "/lotto-numbers" =>"my_examples#lottery"
+  get "/page_count" => "my_examples#counter"
 end
